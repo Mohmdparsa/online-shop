@@ -1,0 +1,55 @@
+.header {
+    position: relative;
+    width: 100%;
+    height: 70px;
+  }
+  .headerTable {
+    display: flex;
+  }
+  .title {
+    margin-left: 20px;
+  }
+  .searchContainer {
+    display: flex;
+  }
+  .searchIcon {
+    margin-top: 22px;
+    margin-left: 50px;
+    background-color: white;
+    padding: 9.4px;
+    border-radius: 6px 0 0 6px;
+    box-shadow: 0 0 6px gray;
+    background-color: rgb(186, 175, 175);
+  }
+  .searchInput {
+    margin-top: 22px;
+    width: 250px;
+    height: 33px;
+    border: none;
+    box-shadow: 0 0 6px gray;
+    border-radius: 0 6px 6px 0;
+  }
+  
+  .loginDiv {
+    width: 130px;
+    height: 50px;
+    display: flex;
+    border: 1px solid black;
+    border-radius: 7px;
+    align-items: center;
+    margin-left: 550px;
+    margin-top: 10px;
+    cursor: pointer;
+    padding-left: 10px;
+    box-shadow: 0 0 5px gray;
+  }
+  .line {
+    border-right: 1px solid gray;
+    height: 50px;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  .shoppingCart {
+    margin-top: 25px;
+    margin-left: 30px;
+  }
