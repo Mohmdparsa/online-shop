@@ -1,0 +1,52 @@
+.mainDiv {
+  width: 100%;
+  height: 800px;
+  background-color: #f0a500;
+}
+.total {
+  margin-left: 200px;
+}
+/* its for our title (Student Registeration Form) */
+.registerTitle {
+  color: black;
+  display: flex;
+  justify-content: center;
+  line-height: 100px;
+}
+.input {
+  width: 930px;
+  padding: 12px;
+  border: none;
+  box-shadow: 0 0 4px gray;
+  border-radius: 5px;
+  margin-top: 12px;
+}
+label {
+  font-weight: bolder;
+}
+.selectTag {
+  margin-top: 10px;
+  width: auto;
+  padding: 7px;
+  border: none;
+  box-shadow: 0 0 4px gray;
+  border-radius: 5px;
+}
+.phone {
+  margin-top: 10px;
+  width: 200px;
+  padding: 8px;
+  border: none;
+  box-shadow: 0 0 4px gray;
+  border-radius: 5px;
+}
+.registerBtn {
+  color: white;
+  background-color: #e45826;
+  width: 950px;
+  padding: 12px;
+  border: none;
+  box-shadow: 0 0 4px gray;
+  border-radius: 5px;
+  margin-top: 12px;
+}

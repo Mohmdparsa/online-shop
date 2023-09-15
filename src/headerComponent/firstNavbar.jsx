@@ -1,5 +1,5 @@
 import styles from "./firstNavbar.module.css";
-import {NavLink} from "react-router-dom"
+import { NavLink } from "react-router-dom";
 
 const FirstNavbar = () => {
   return (
@@ -34,14 +34,23 @@ const FirstNavbar = () => {
               </td>
             </tr>
             <span>
-            <NavLink
+              <NavLink
                 to="/Login"
                 style={({ isActive }) => {
                   return { color: isActive ? "red" : "" };
                 }}
               >
                 Login
-              </NavLink>{" "}|<span>Sign in</span>
+              </NavLink>{" "}
+              |
+              <NavLink
+                to="/SignIn"
+                style={({ isActive }) => {
+                  return { color: isActive ? "red" : "" };
+                }}
+              >
+                Sign in
+              </NavLink>{" "}
             </span>
           </div>
           <div className={styles.line}></div>
