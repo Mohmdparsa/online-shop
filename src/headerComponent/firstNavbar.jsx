@@ -1,4 +1,6 @@
 import styles from "./firstNavbar.module.css";
+import {NavLink} from "react-router-dom"
+
 const FirstNavbar = () => {
   return (
     <div>
@@ -32,7 +34,14 @@ const FirstNavbar = () => {
               </td>
             </tr>
             <span>
-              <span>Login</span>|<span>Sign in</span>
+            <NavLink
+                to="/Login"
+                style={({ isActive }) => {
+                  return { color: isActive ? "red" : "" };
+                }}
+              >
+                Login
+              </NavLink>{" "}|<span>Sign in</span>
             </span>
           </div>
           <div className={styles.line}></div>
