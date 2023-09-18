@@ -37,7 +37,8 @@
     margin-top: 10px;
     margin-left: 50px;
     border-radius: 10px;
-    position: absolute;
+    /* position: absolute; */
+    flex-direction: column;
 
   }
   .swiperImg {
