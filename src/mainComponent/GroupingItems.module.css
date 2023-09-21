@@ -4,6 +4,7 @@
     width: 250px;
     height: 320px;
     box-shadow: 0 0 5px gray;
+    background:linear-gradient(to top ,#ffffff, #e7e9f0 );
     margin-top: 100px;
     margin-left: 35px;
     padding: 20px;
@@ -12,7 +13,7 @@
 }
 
 .title{
-    color: red;
+    color: #081f62;
 }
 
 .itemsImg{
