@@ -14,6 +14,7 @@ import {
   FindYourIdealTV,
   ShopLaptopsAndTablets,
   Smartwatches,
+  Toys ,
 } from "./mainComponent";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -38,6 +39,7 @@ root.render(
           element={<ShopLaptopsAndTablets />}
         />
         <Route path="/Smartwatches" element={<Smartwatches />} />
+        <Route path="/Toys" element={<Toys />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

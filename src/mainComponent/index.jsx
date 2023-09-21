@@ -6,5 +6,6 @@ export {default as  ForYourFitnessNeeds} from "./GILinkComponent/ForYourFitnessN
 export {default as  FindYourIdealTV} from "./GILinkComponent/FindYourIdealTV"
 export {default as ShopLaptopsAndTablets} from "./GILinkComponent/ShopLaptops&Tablets"
 export {default as Smartwatches} from "./GILinkComponent/smartwatches"
+export {default as Toys } from "./GILinkComponent/Toys"
 
  
