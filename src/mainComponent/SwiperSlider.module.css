@@ -1,7 +1,7 @@
 .swiperSliderMain {
     width: 95%;
     height: 300px;
-    background-color: #E45826;
+    background: linear-gradient(to right , #437FC7 , #edf6ff);
     margin-left: 30px;
     border-radius: 15px;
     display: flex;
@@ -9,7 +9,7 @@
     z-index: 0;
   }
   .swiperTitleDiv {
-    background-color: #E6D5B8;
+    background-color: #edf6ff;
     width: 130px;
     height: 100px;
     /* position: relative; */
@@ -26,11 +26,11 @@
     height: 0;
     border-top: 50px solid transparent;
     border-bottom: 50px solid transparent;
-    border-left: 50px solid #E6D5B8;
+    border-left: 50px solid #edf6ff;
     margin-left: 15px;
   }
   .swiperBox {
-    background-color: #F0A500;
+    background-color:#edf6ff ;
     color: black;
     width: 200px;
     height: 260px;
@@ -57,7 +57,7 @@
     display: flex;
     width: 1000px;
     height: 280px;
-    background-color: #E6D5B8;
+    background-color: #ffffff;
     margin-top: 10px;
     margin-left: 100px;
     border-radius: 15px;
