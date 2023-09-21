@@ -12,6 +12,7 @@ import HealthAndPersonalCare from "./mainComponent/GILinkComponent/Health&Person
 import ForYourFitnessNeeds from "./mainComponent/GILinkComponent/ForYourFitnessNeeds"
 import FindYourIdealTV from "./mainComponent/GILinkComponent/FindYourIdealTV"
 import ShopLaptopsAndTablets from "./mainComponent/GILinkComponent/ShopLaptops&Tablets"
+import Smartwatches from "./mainComponent/GILinkComponent/smartwatches"
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -29,6 +30,8 @@ root.render(
       <Route  path="/ForYourFitnessNeeds" element={<ForYourFitnessNeeds/>}/>
       <Route  path="/FindYourIdealTV" element={<FindYourIdealTV/>}/>
       <Route  path="/ShopLaptopsAndTablets" element={<ShopLaptopsAndTablets/>}/>
+      <Route  path="/Smartwatches" element={<Smartwatches/>}/>
+
 
 
      
