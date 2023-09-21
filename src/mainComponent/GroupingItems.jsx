@@ -77,6 +77,20 @@ const GroupingItems = () => {
         <span className={styles.shopNow}>Shop Now</span>
       </div>
       </NavLink>
+      <NavLink
+
+to="/FindYourIdealTV"
+style={({ isActive }) => {
+  return { color: isActive ? "red" : "" };
+}}>
+     <div className={styles.items}>
+  <h2 className={styles.title}>Find Your Ideal TV</h2>
+  <img className={styles.itemsImg} src="" alt="" />
+  <br />
+  <br />
+  <span className={styles.shopNow}>Shop Now</span>
+</div>
+</NavLink>
 
 
    
