@@ -25,7 +25,9 @@ root.render(
         <Route path="/" element={<App />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/SignIn" element={<SignIn />} />
-        <Route path="/GamingAccessories" element={<GamingAccessories />} />
+        <Route path="/GamingAccessories" element={<GamingAccessories />}>
+          
+        </Route>
         <Route path="/Electronics" element={<Electronics />} />
         <Route path="/HomeAndKitchen" element={<HomeAndKitchen />} />
         <Route
