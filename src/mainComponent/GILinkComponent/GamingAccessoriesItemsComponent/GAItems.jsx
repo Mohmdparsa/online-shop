@@ -1,6 +1,7 @@
 import styles from "./GAItems.module.css";
 import { useState } from "react";
-const GAItems = () => {
+import Spinner from "../../Spinner";
+const GAItems = ({loading}) => {
   const [count, setCount] = useState(0);
 
   const Increase = () => {
@@ -15,7 +16,9 @@ const GAItems = () => {
 
   return (
     <>
-      <div className={styles.GAItemsContainer}>
+    {
+      loading? <Spinner/> : (
+           <div className={styles.GAItemsContainer}>
         <div className={styles.GAItemsImg}>
           <img src="" alt="" />
         </div>
@@ -49,6 +52,9 @@ const GAItems = () => {
           </button>
         </div>
       </div>
+      )
+    }
+   
     </>
   );
 };

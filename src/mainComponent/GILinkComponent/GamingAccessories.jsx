@@ -2,8 +2,10 @@ import styles from "./GamingAccessories.module.css";
 import FirstNavbar from "../../headerComponent/firstNavbar";
 import SecondNavbar from "../../headerComponent/SecondNavbar";
 import GAItems from "./GamingAccessoriesItemsComponent/GAItems"
+import { useState } from "react";
 
 const GamingAccessories = () => {
+  const [loading , setLoading] = useState(false)
   return (
     <>
       <header>
@@ -24,7 +26,7 @@ const GamingAccessories = () => {
       </div> 
       </section>
       <section>
-        <GAItems/>
+        <GAItems loading={loading}/>
 
       
       </section>
