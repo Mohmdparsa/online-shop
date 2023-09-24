@@ -3,7 +3,7 @@
   height: 250px;
   margin-top: 10px;
   margin-left: 10px;
-  background-color: red;
+  background:linear-gradient( #6daffe ,#edf6ff) ;
   border-radius: 0 40px 0 40px;
   display: flex;
 }
