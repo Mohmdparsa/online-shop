@@ -1,0 +1,19 @@
+{
+  "goods": [
+    {
+      "fullname": "mmd",
+      "group": 1,
+      "id": 1
+    }
+  ],
+  "groups": [
+    {
+      "id": "1",
+      "name": "tv"
+    },
+    {
+      "id": "2",
+      "name": "table"
+    }
+  ]
+}
