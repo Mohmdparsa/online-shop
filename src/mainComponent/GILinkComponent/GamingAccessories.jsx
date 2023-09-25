@@ -3,8 +3,10 @@ import FirstNavbar from "../../headerComponent/firstNavbar";
 import SecondNavbar from "../../headerComponent/SecondNavbar";
 import GAItems from "./GamingAccessoriesItemsComponent/GAItems"
 import { useState } from "react";
+import NoGoodsAvailable from "./NoGoodsAvailable";
 
-const GamingAccessories = () => {
+const GamingAccessories = ({getGAGoods}) => {
+
   const [loading , setLoading] = useState(false)
   return (
     <>
@@ -26,9 +28,16 @@ const GamingAccessories = () => {
       </div> 
       </section>
       <section>
-        <GAItems loading={loading}/>
+        {
+          getGAGoods > 0 ? getGAGoods.map(g =>(
+            <GAItems key={g.id} GAItems={g} loading={loading}/>
+          )): <div>
+           <NoGoodsAvailable/>
 
-      
+          </div>
+
+        }
+       
       </section>
       </div>
   

@@ -1,0 +1,12 @@
+.NGAContainer{
+    width: 700px;
+    height: 200px;
+    background-color: rgb(255, 183, 0);
+    border-radius: 10px;
+    border: 5px solid black;
+    margin-top: 80px;
+    margin-left: 200px;
+    text-align: center;
+    line-height: 150px;
+}
+
