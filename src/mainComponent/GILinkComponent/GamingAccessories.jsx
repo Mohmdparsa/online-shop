@@ -5,9 +5,10 @@ import GAItems from "./GamingAccessoriesItemsComponent/GAItems"
 import { useState } from "react";
 import NoGoodsAvailable from "./NoGoodsAvailable";
 
-const GamingAccessories = ({getGAGoods}) => {
+const GamingAccessories = (getGAGoods) => {
 
   const [loading , setLoading] = useState(false)
+  {console.log("this is getGAGoods",getGAGoods)}
   return (
     <>
       <header>
@@ -29,7 +30,8 @@ const GamingAccessories = ({getGAGoods}) => {
       </section>
       <section>
         {
-          getGAGoods > 0 ? getGAGoods.map(g =>(
+          getGAGoods.length> 0 ? 
+          getGAGoods.map(g =>(
             <GAItems key={g.id} GAItems={g} loading={loading}/>
           )): <div>
            <NoGoodsAvailable/>
