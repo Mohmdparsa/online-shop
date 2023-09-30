@@ -68,3 +68,32 @@
     margin-left: 40px;
     
   }
+
+  .leftArrowBtn{
+    z-index: 1;
+    width: 0;
+    height: 0;
+    border-top: 32px solid transparent;
+    border-bottom: 32px solid transparent;
+    border-right: 32px solid black;
+    margin-right: 15px;
+    margin-top: 90px;
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+
+  .rightArrowBtn{
+    z-index: 1;
+    width: 0;
+    height: 0;
+    border-top: 32px solid transparent;
+    border-bottom: 32px solid transparent;
+    border-left: 32px solid black;
+    margin-left: 15px;
+    margin-top: 90px;
+    margin-right: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+    
+  }

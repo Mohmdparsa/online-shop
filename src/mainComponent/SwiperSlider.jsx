@@ -19,6 +19,7 @@ const SwiperSlider = () => {
           
   
           <div className={styles.swiperSlider}>
+          <div className={styles.leftArrowBtn}> </div>
           <Swiper
       modules={[Navigation, Pagination, Scrollbar ]}
       className={styles.swiper}
@@ -52,6 +53,7 @@ const SwiperSlider = () => {
             <span className={styles.swiperBoxCost}>22$</span>
           </div></SwiperSlide>
      </Swiper>
+     <div className={styles.rightArrowBtn}> </div>
          
           </div>
   
