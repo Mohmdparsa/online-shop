@@ -16,8 +16,8 @@ const GAItems = ({loading , GAItems}) => {
 
   return (
     <>
-    {
-      loading? <Spinner/> : (
+    
+    
            <div className={styles.GAItemsContainer}>
         <div className={styles.GAItemsImg}>
           <img src={GAItems.photo} alt="" />
@@ -52,8 +52,6 @@ const GAItems = ({loading , GAItems}) => {
           </button>
         </div>
       </div>
-      )
-    }
    
     </>
   );

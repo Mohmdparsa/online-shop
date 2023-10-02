@@ -2,13 +2,38 @@ import styles from "./GamingAccessories.module.css";
 import FirstNavbar from "../../headerComponent/firstNavbar";
 import SecondNavbar from "../../headerComponent/SecondNavbar";
 import GAItems from "./GamingAccessoriesItemsComponent/GAItems"
-import { useState } from "react";
+import { useState , useEffect } from "react";
 import NoGoodsAvailable from "./NoGoodsAvailable";
+import axios from "axios"
+import Spinner from "../Spinner";
 
-const GamingAccessories = (getGAGoods) => {
-
+const GamingAccessories = () => {
+  const [getGAGood , setGAGood] = useState([])
   const [loading , setLoading] = useState(false)
-  {console.log("this is getGAGoods",getGAGoods)}
+  const [getGAGoods , setGAGoods ] = useState([])
+  const [getGAGroups , setGAGroups] = useState([])
+  useEffect(() => {
+    const fetchData = async () => {
+      try{
+        setLoading(true)
+        const {data : GAGoodsData} = await axios.get(" http://localhost:9000/goods")
+        const {data : GAGroupsData} = await axios.get(" http://localhost:9000/groups")
+        setGAGoods(GAGoodsData)
+        setGAGroups(GAGroupsData) 
+        setLoading(false)
+        
+
+      }catch(error){
+        console.log(error)
+        setLoading(false)
+
+      }
+
+    } 
+    fetchData();
+  } , [])
+
+ 
   return (
     <>
       <header>
@@ -29,7 +54,10 @@ const GamingAccessories = (getGAGoods) => {
       </div> 
       </section>
       <section>
-        {
+        {  loading? 
+        (<Spinner/> ): 
+
+          (
           getGAGoods.length> 0 ? 
           getGAGoods.map(g =>(
             <GAItems key={g.id} GAItems={g} loading={loading}/>
@@ -38,9 +66,9 @@ const GamingAccessories = (getGAGoods) => {
 
           </div>
 
+          )
         }
-       
-      </section>
+        </section>
       </div>
   
   

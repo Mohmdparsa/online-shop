@@ -1,9 +1,9 @@
 import styles from "./GroupingItems.module.css";
 import { NavLink } from "react-router-dom";
-import { useState } from "react";
+
 
 const GroupingItems = () => {
-  const [getGAGoods , setGetGAGoods] = useState([])
+  
   return (
     <div>
       <NavLink
@@ -11,7 +11,7 @@ const GroupingItems = () => {
         style={({ isActive }) => {
           return { color: isActive ? "red" : "" };
         }}
-        getGAGoods={getGAGoods}
+      
 
       >
         <div className={styles.items}>
