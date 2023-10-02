@@ -1,7 +1,6 @@
 import styles from "./GAItems.module.css";
 import { useState } from "react";
-import Spinner from "../../Spinner";
-const GAItems = ({ loading, GAItems }) => {
+const GAItems = ({ GAItems }) => {
   const [count, setCount] = useState(0);
 
   const Increase = () => {
