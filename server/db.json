@@ -1,12 +1,28 @@
 {
   "goods": [
     {
-      "photo": "",
+      "photo": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.amazon.com%2FHuifen-Gaming-Silent-Backlit-Notebook%2Fdp%2FB09FSW7R6K&psig=AOvVaw3OTcq8oriO7lqbZXPZOANh&ust=1696328867944000&source=images&cd=vfe&opi=89978449&ved=0CBMQjhxqFwoTCKCzntuW14EDFQAAAAAdAAAAABAE",
       "name": "Huifen Gaming Mouse",
       "desc": "Huifen Wired USB C Gaming Mouse, Silent RGB Gaming Mice 7 Colors Backlit, 2400 DPi, Type c RGB Wired Mouse Gaming For Office Home Pc and Notebook and All Type-C Device",
       "cost": "14$",
       "group": "1",
       "id": 1
+    },
+    {
+      "photo": "",
+      "name": "Cackbird Gaming Keyboard",
+      "desc": "Portable 60% Mechanical Gaming Keyboard, Wired Keyboard with Blue Switches,LED Customization Backlit, 61 Keys Ultra-Compact Mini Office Keyboard for PC/Mac/Xbox,Easy to Carry On Trip",
+      "cost": "23$",
+      "group": "2",
+      "id": 2
+    },
+    {
+      "photo": "",
+      "name": "MageGee Gaming Keyboard",
+      "desc": "MageGee Portable 60% Mechanical Gaming Keyboard MK-Box LED Backlit Compact 68 Keys Mini Wired Office Keyboard with Red Switch for Windows Laptop PC Mac Black/Gray",
+      "cost": "30$",
+      "group": "2",
+      "id": 3
     }
   ],
   "groups": [
