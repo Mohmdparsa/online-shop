@@ -1,19 +1,22 @@
 {
   "goods": [
     {
-      "fullname": "mmd",
-      "group": 1,
+      "photo": "",
+      "name": "Huifen Gaming Mouse",
+      "desc": "Huifen Wired USB C Gaming Mouse, Silent RGB Gaming Mice 7 Colors Backlit, 2400 DPi, Type c RGB Wired Mouse Gaming For Office Home Pc and Notebook and All Type-C Device",
+      "cost": "14$",
+      "group": "1",
       "id": 1
     }
   ],
   "groups": [
     {
       "id": "1",
-      "name": "tv"
+      "name": "mouse"
     },
     {
       "id": "2",
-      "name": "table"
+      "name": "keyboard"
     }
   ]
 }
