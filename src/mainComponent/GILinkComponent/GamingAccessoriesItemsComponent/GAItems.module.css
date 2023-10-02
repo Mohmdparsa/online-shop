@@ -15,14 +15,23 @@
   border-radius: 0 40px 0 40px;
   margin-left: 15px;
   margin-top: 15px;
+  margin-right: 30px;
 }
 
 .GAItemsName {
   margin-left: 10px;
+  width: 300px;
 }
-
+.GAItemsDescription{
+  margin-top: 25px;
+  height: 50px;
+  width: 100px;
+}
 .GAItemsDesc {
-  margin-left: 20px;
+  margin-left: 10px;
+  margin-top: 20px;
+  width: 500px;
+  height: 100px;
 }
 .GAItemsLine {
   width: 2px;
@@ -36,24 +45,22 @@
     height: 30px;
     width: 50px;
     border-radius: 5px;
-    margin-top: 40px;
-}
-.GAItemsCount{
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 .GAItemsCost{
     margin-left: 60px;
     margin-top: 100px;
     font-size: 30px;
+    bottom: 0;
+}
+.GAItemsCount{
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .GAItemsSubmitBtn{
     width: 170px;
     height: 30px;
-    margin-top: 50px;
     margin-left: 35px;
-    border-radius: 7px;
-    
+    border-radius: 7px; 
 }
 
