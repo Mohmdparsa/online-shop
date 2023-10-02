@@ -1,27 +1,60 @@
 .loginContainer {
-    width: 600px;
-    height: 400px;
-    background-color: #F0A500;
-    color: white;
-    border-radius: 10px;
-    margin-top: 100px;
-    margin-left: 350px;
-    font-size: 22px;
-  }
-  .loginTable {
-    padding-left: 120px;
-    padding-top: 90px;
-  }
-  .loginInput {
-    width: 330px;
-    height: 40px;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0 0 6px white;
-  }
-  
-  .loginSubmit {
-    width: 80px;
-    height: 40px;
-    border-radius: 10px;
-  }
+  width: 600px;
+  height: 550px;
+  background-color: #437fc7;
+  color: white;
+  border-radius: 10px;
+  margin-top: 60px;
+  margin-left: 350px;
+}
+.loginTable {
+  padding-left: 120px;
+  padding-top: 35px;
+}
+.loginTitle {
+  color: black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+.loginInput {
+  width: 330px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 6px white;
+}
+.loginForgotPassword {
+  margin-left: 100px;
+}
+
+.loginSubmit {
+  width: 330px;
+  height: 40px;
+  border-radius: 10px;
+  margin-top: 30px;
+  border: none;
+}
+
+.loginFieldset {
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.LoginGoogleLogin {
+  width: 300px;
+  height: 30px;
+  background-color: rgb(248, 239, 239);
+  border-radius: 5px;
+  color: gray;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.LoginGoogleImg {
+  width: 30px;
+  border-radius: 10px;
+}
