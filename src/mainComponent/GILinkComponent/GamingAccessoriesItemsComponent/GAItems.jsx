@@ -16,7 +16,7 @@ const GAItems = ({ GAItems }) => {
     <>
       <div className={styles.GAItemsContainer}>
         <div className={styles.GAItemsImg}>
-          <img src={GAItems.photo} alt="" />
+          <img src={GAItems.photo} alt="GAItemsPhoto" />
         </div>
         <div className={styles.GAItemsDescription}>
           <h3 className={styles.GAItemsName}>{GAItems.name}</h3>
