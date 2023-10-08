@@ -4,8 +4,8 @@ import SecondNavbar from "../../headerComponent/SecondNavbar";
 import GAItems from "./GamingAccessoriesItemsComponent/GAItems"
 import { useState , useEffect } from "react";
 import NoGoodsAvailable from "./NoGoodsAvailable";
-import axios from "axios"
 import Spinner from "../Spinner";
+import {GAGoods , GAGroups} from "../../services/GAServices"
 
 const GamingAccessories = () => {
   const [getGAGood , setGAGood] = useState([])
@@ -16,13 +16,11 @@ const GamingAccessories = () => {
     const fetchData = async () => {
       try{
         setLoading(true)
-        const {data : GAGoodsData} = await axios.get(" http://localhost:9000/goods")
-        const {data : GAGroupsData} = await axios.get(" http://localhost:9000/groups")
+        const {data : GAGoodsData} = await GAGoods()
+        const {data : GAGroupsData} = await GAGroups()
         setGAGoods(GAGoodsData)
         setGAGroups(GAGroupsData) 
         setLoading(false)
-        
-
       }catch(error){
         console.log(error)
         setLoading(false)
