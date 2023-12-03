@@ -36,6 +36,7 @@
   height: 35px;
   border-radius: 5px;
   margin-top: 20px;
+  margin-right: 25px;
 }
 .formTable {
   margin-left: 70px;
@@ -75,4 +76,8 @@
   font-weight: bold;
   font-size: 20px;
   color: #437fc7;
+}
+.ErrorMessage{
+  color: red;
+  
 }
