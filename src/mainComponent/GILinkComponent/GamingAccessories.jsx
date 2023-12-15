@@ -6,6 +6,7 @@ import { useState , useEffect } from "react";
 import NoGoodsAvailable from "./NoGoodsAvailable";
 import Spinner from "../Spinner";
 import {GAGoods , GAGroups} from "../../services/GAServices"
+import { Helmet , HelmetProvider } from "react-helmet-async";
 
 const GamingAccessories = () => {
   const [getGAGood , setGAGood] = useState([])
@@ -34,7 +35,9 @@ const GamingAccessories = () => {
  
   return (
     <>
-      <header>
+    <HelmetProvider>
+      <Helmet><title>Online Shop | Gaming Accessories</title></Helmet>
+        <header>
         <FirstNavbar />
         <br />
         <SecondNavbar />
@@ -68,6 +71,8 @@ const GamingAccessories = () => {
         }
         </section>
       </div>
+    </HelmetProvider>
+    
   
   
     </>
