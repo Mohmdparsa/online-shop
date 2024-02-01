@@ -5,7 +5,7 @@ import { CacheProvider } from "@emotion/react";
 import createCache from "@emotion/cache";
 import { prefixer } from "stylis";
 import { Button } from "@mui/material";
-import FirstHeader from "./Component/FirstHeader";
+import FirstHeader from "./Component/FirstNavbar";
 const theme = createTheme({
   direction: "rtl",
 });
