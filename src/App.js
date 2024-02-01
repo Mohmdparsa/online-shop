@@ -5,7 +5,7 @@ import { CacheProvider } from "@emotion/react";
 import createCache from "@emotion/cache";
 import { prefixer } from "stylis";
 import { Button } from "@mui/material";
-import FirstHeader from "./Component/FirstNavbar";
+import FirstNavbar from "./Component/FirstNavbar"
 const theme = createTheme({
   direction: "rtl",
 });
@@ -22,7 +22,7 @@ function App() {
             <title>آنلاین شاپ شخصی</title>
           </Helmet>
           <div className="App">
-            <FirstHeader/>
+            <FirstNavbar/>
           </div>
         </HelmetProvider>
       </ThemeProvider>
