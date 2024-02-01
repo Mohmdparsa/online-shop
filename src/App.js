@@ -1,4 +1,5 @@
 import { ThemeProvider, createTheme } from "@mui/material/styles";
+import { HelmetProvider, Helmet } from "react-helmet-async";
 import rtlPlugin from "stylis-plugin-rtl";
 import { CacheProvider } from "@emotion/react";
 import createCache from "@emotion/cache";
@@ -17,9 +18,14 @@ function App() {
   return (
     <CacheProvider value={cacheRTL}>
       <ThemeProvider theme={theme}>
-        <div className="App">
-          <Button variant="contained">hello</Button>
-        </div>
+        <HelmetProvider>
+          <Helmet>
+            <title>آنلاین شاپ شخصی</title>
+          </Helmet>
+          <div className="App">
+            <Button variant="contained">hello</Button>
+          </div>
+        </HelmetProvider>
       </ThemeProvider>
     </CacheProvider>
   );
