@@ -23,7 +23,6 @@ function App() {
           </Helmet>
           <div className="App">
             <FirstHeader/>
-            <Button variant="contained">hello</Button>
           </div>
         </HelmetProvider>
       </ThemeProvider>
