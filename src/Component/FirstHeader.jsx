@@ -71,14 +71,14 @@ const FirstHeader = ()=> {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
-            MUI
+            فروشگاه من
           </Typography>
           <Search>
             <SearchIconWrapper>
               <SearchIcon />
             </SearchIconWrapper>
             <StyledInputBase
-              placeholder="Search…"
+              placeholder="جستجو..."
               inputProps={{ 'aria-label': 'search' }}
             />
           </Search>
