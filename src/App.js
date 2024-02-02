@@ -4,8 +4,9 @@ import rtlPlugin from "stylis-plugin-rtl";
 import { CacheProvider } from "@emotion/react";
 import createCache from "@emotion/cache";
 import { prefixer } from "stylis";
-import { Button } from "@mui/material";
+import { Button, Typography } from "@mui/material";
 import FirstNavbar from "./Component/FirstNavbar"
+import SecondNavbar from "./Component/SocondNavbar";
 const theme = createTheme({
   direction: "rtl",
 });
@@ -23,6 +24,8 @@ function App() {
           </Helmet>
           <div className="App">
             <FirstNavbar/>
+            <div style={{paddingTop:"55px"}}></div>
+            <SecondNavbar/>
           </div>
         </HelmetProvider>
       </ThemeProvider>
