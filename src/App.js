@@ -7,6 +7,7 @@ import { prefixer } from "stylis";
 import { Button, Typography } from "@mui/material";
 import FirstNavbar from "./Component/FirstNavbar"
 import SecondNavbar from "./Component/SocondNavbar";
+import SwipeableImage from "./Component/SwipeableImage";
 const theme = createTheme({
   direction: "rtl",
 });
@@ -26,6 +27,7 @@ function App() {
             <FirstNavbar/>
             <div style={{paddingTop:"55px"}}></div>
             <SecondNavbar/>
+            <SwipeableImage/>
           </div>
         </HelmetProvider>
       </ThemeProvider>
