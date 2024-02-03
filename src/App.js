@@ -8,6 +8,7 @@ import { Button, Typography } from "@mui/material";
 import FirstNavbar from "./Component/FirstNavbar"
 import SecondNavbar from "./Component/SocondNavbar";
 import SwipeableImage from "./Component/SwipeableImage";
+import ProductsPartition from "./Component/ProductsPartition";
 const theme = createTheme({
   direction: "rtl",
 });
@@ -28,6 +29,7 @@ function App() {
             <div style={{paddingTop:"55px"}}></div>
             <SecondNavbar/>
             <SwipeableImage/>
+            <ProductsPartition/>
           </div>
         </HelmetProvider>
       </ThemeProvider>
