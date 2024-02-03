@@ -6,7 +6,7 @@ import createCache from "@emotion/cache";
 import { prefixer } from "stylis";
 import { Button, Typography } from "@mui/material";
 import FirstNavbar from "./Component/FirstNavbar"
-import SecondNavbar from "./Component/SocondNavbar";
+import SecondNavbar from "./Component/SecondNavbar";
 import SwipeableImage from "./Component/SwipeableImage";
 import ProductsPartition from "./Component/ProductsPartition";
 const theme = createTheme({
