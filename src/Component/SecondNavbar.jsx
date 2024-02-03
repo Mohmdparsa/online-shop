@@ -1,4 +1,5 @@
 import { AppBar, Toolbar, useScrollTrigger } from "@mui/material";
+import SecondNavbarContent from "./SecondNavbarContent";
 
 const SecondNavbar = () => {
   const trigger = useScrollTrigger({
@@ -23,10 +24,12 @@ const SecondNavbar = () => {
             sm: "none",
             md: "block",
           },
-          height: "43px",
+          height: "47px",
         }}
       >
-        <Toolbar></Toolbar>
+        <Toolbar>
+          <SecondNavbarContent/>
+        </Toolbar>
       </AppBar>
     </>
   );
