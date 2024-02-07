@@ -17,6 +17,7 @@ const SecondNavbar = () => {
           visibility: trigger ? "hidden" : "visible",
           transition: "visibility 0.5s ease-in-out",
           zIndex: 1000,
+          backgroundColor:"#999999",
         }}
         sx={{
           display: {
