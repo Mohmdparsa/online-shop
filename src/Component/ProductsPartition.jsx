@@ -10,7 +10,7 @@ const ProductsPartition = () => {
     <>
       <Grid container sx={{ mb: 2, mt: 2 , display:"flex"}}>
         <Grid xs={12} sm={6} md={6} lg={4} >
-              <Card sx={{ maxWidth: 345 , bgcolor:"red" , ml:8 , mb:4 , mr:8}}>
+              <Card sx={{ maxWidth: 345 , bgcolor:"primary.main" , color:"seconadary.main", ml:8 , mb:4 , mr:8}}>
           <CardActionArea>
             <CardMedia
               component="img"
@@ -29,7 +29,7 @@ const ProductsPartition = () => {
             </CardContent>
           </CardActionArea>
           <CardActions>
-            <Button size="small" color="primary">
+            <Button size="small" color="secondary">
               Share
             </Button>
           </CardActions>
