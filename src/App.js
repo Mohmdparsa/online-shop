@@ -8,9 +8,7 @@ import { Button, Typography } from "@mui/material";
 import {FirstNavbar , SecondNavbar} from "./Component/header/Header"
 import SwipeableImage from "./Component/SwipeableImage";
 import ProductsPartition from "./Component/ProductsPartition";
-const theme = createTheme({
-  direction: "rtl",
-});
+import theme from "./layouts/Theme";
 const cacheRTL = createCache({
   key: "muirtl",
   stylisPlugins: [prefixer, rtlPlugin],
