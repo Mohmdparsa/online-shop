@@ -9,14 +9,23 @@ const SecondNavbarContent = () => {
     setValue(newValue);
   };
 
+  const tabs = [
+    {label:"item one", id:"1"},
+    {label:"item one", id:"1"},
+    {label:"item one", id:"1"},
+    {label:"item one", id:"1"},
+    {label:"item one", id:"1"},
+    {label:"item one", id:"1"},
+    {label:"item one", id:"1"},
+    {label:"item one", id:"1"},
+  ]
+
   return (
-    <Tabs value={value} onChange={handleChange} centered sx={{ mb: "20px" }}>
-      <Tab label="Item One" sx={{ fontSize: "10px" }} />
-      <Tab label="Item Two" sx={{ fontSize: "10px" }} />
-      <Tab label="Item Three" sx={{ fontSize: "10px" }} />
-      <Tab label="Item four" sx={{ fontSize: "10px" }} />
-      <Tab label="Item five" sx={{ fontSize: "10px" }} />
-      <Tab label="Item six" sx={{ fontSize: "10px" }} />
+    <Tabs value={value} onChange={handleChange} centered sx={{ mb: "20px"}}>
+      {tabs.map((t , index) =>(
+         <Tab key={index} label={t.label} sx={{ fontSize: "10px", color:"black"}}/>
+
+      ))}
     </Tabs>
   );
 };
