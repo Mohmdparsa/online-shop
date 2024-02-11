@@ -1,17 +1,27 @@
 import * as React from "react";
-import { styled, alpha } from "@mui/material/styles";
-import {AppBar , Box , Toolbar ,Typography , InputBase} from "@mui/material"
-import IconButton from "@mui/material/IconButton";
+import { styled } from "@mui/material/styles";
+import {
+  AppBar,
+  Box,
+  Toolbar,
+  Typography,
+  InputBase,
+  Button,
+  Card,
+  IconButton,
+} from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
+import LoginRoundedIcon from "@mui/icons-material/LoginRounded";
+import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
   borderRadius: theme.shape.borderRadius,
   backgroundColor: "lightgrey",
   "&:hover": {
-    backgroundColor:"grey",
-    color:"white",
+    backgroundColor: "grey",
+    color: "white",
   },
   marginLeft: 0,
   width: "100%",
@@ -79,6 +89,31 @@ const FirstHeader = () => {
               inputProps={{ "aria-label": "search" }}
             />
           </Search>
+          <Card
+            sx={{
+              backgroundColor: "primary.main",
+              border: "1px solid black",
+              marginLeft: "20px",
+              width: "160px",
+              display: "flex",
+            }}
+          >
+            <Button variant="text" sx={{ color: "blue", fontSize: "15px" }}>
+              ورود
+            </Button>{" "}
+            <span style={{ marginTop: "10px" }}>|</span>
+            <Button
+              variant="text"
+              sx={{ color: "blue", fontSize: "15px", mt: "3px" }}
+            >
+              ثبت نام
+            </Button>
+            <LoginRoundedIcon sx={{ fontSize: "17px", marginTop: "13px" }} />
+          </Card>
+          <span style={{ marginRight: "20px" }}>|</span>
+          <IconButton color="secondary.main" sx={{marginLeft:"20px"}} aria-label="add to shopping cart" size="small">
+            <AddShoppingCartIcon />
+          </IconButton>
         </Toolbar>
       </AppBar>
     </Box>
