@@ -1,13 +1,20 @@
-import {
-  Container,
-  TextField,
-  CardContent,
-  Grid,
-  InputAdornment,
-  Button,
-} from "@mui/material";
-import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import { Container, TextField, CardContent, Grid, Button } from "@mui/material";
+import { useFormik } from "formik";
+import validationSchema from "../../../validations/Schema";
 const SignIn = () => {
+  const formik = useFormik({
+    initialValues: {
+      name: "",
+      lastName: "",
+      email: "",
+      password: "",
+      repeatPassword: "",
+    },
+    validationSchema: validationSchema,
+    onSubmit: (values) => {
+      alert(JSON.stringify(values, null, 2));
+    },
+  });
   return (
     <>
       <Container>
@@ -39,8 +46,14 @@ const SignIn = () => {
                   fullWidth
                   size="small"
                   placeholder="نام"
-                  name="email"
+                  name="name"
                   variant="outlined"
+                  id="name"
+                  value={formik.values.name}
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  error={formik.touched.name && Boolean(formik.errors.name)}
+                  helperText={formik.touched.name && formik.errors.name}
                   sx={{
                     width: { xs: "90%", sm: "77%" },
                     bgcolor: "whitesmoke",
@@ -55,8 +68,16 @@ const SignIn = () => {
                   fullWidth
                   size="small"
                   placeholder="نام خانوادگی"
-                  name="email"
+                  name="lastName"
                   variant="outlined"
+                  id="lastName"
+                  value={formik.values.lastName}
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  error={
+                    formik.touched.lastName && Boolean(formik.errors.lastName)
+                  }
+                  helperText={formik.touched.lastName && formik.errors.lastName}
                   sx={{
                     width: { xs: "90%", sm: "77%" },
                     bgcolor: "whitesmoke",
@@ -72,6 +93,12 @@ const SignIn = () => {
                   placeholder="آدرس ایمیل"
                   name="email"
                   variant="outlined"
+                  id="email"
+                  value={formik.values.email}
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  error={formik.touched.email && Boolean(formik.errors.email)}
+                  helperText={formik.touched.email && formik.errors.email}
                   sx={{
                     width: { xs: "90%", sm: "77%" },
                     bgcolor: "whitesmoke",
@@ -85,8 +112,16 @@ const SignIn = () => {
                   fullWidth
                   size="small"
                   placeholder="رمز عبور"
-                  name="email"
+                  name="password"
                   variant="outlined"
+                  id="password"
+                  value={formik.values.password}
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  error={
+                    formik.touched.password && Boolean(formik.errors.password)
+                  }
+                  helperText={formik.touched.password && formik.errors.password}
                   sx={{
                     width: { xs: "90%", sm: "77%" },
                     bgcolor: "whitesmoke",
@@ -100,8 +135,20 @@ const SignIn = () => {
                   fullWidth
                   size="small"
                   placeholder=" تکرار رمز عبور "
-                  name="email"
+                  name="repeatPassword"
                   variant="outlined"
+                  id="repeatPassword"
+                  value={formik.values.repeatPassword}
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  error={
+                    formik.touched.repeatPassword &&
+                    Boolean(formik.errors.repeatPassword)
+                  }
+                  helperText={
+                    formik.touched.repeatPassword &&
+                    formik.errors.repeatPassword
+                  }
                   sx={{
                     width: { xs: "90%", sm: "77%" },
                     bgcolor: "whitesmoke",
