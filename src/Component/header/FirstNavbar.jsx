@@ -109,7 +109,7 @@ const FirstHeader = () => {
               variant="text"
               sx={{ color: "blue", fontSize: "15px", mt: "3px" }}
             >
-              <Link to="SingIn" style={{textDecoration: 'none'}}>
+              <Link to="SignIn" style={{textDecoration: 'none'}}>
               ثبت نام 
               </Link>
             </Button>
