@@ -14,6 +14,9 @@ import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
 import LoginRoundedIcon from "@mui/icons-material/LoginRounded";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
+import { Link } from 'react-router-dom';
+
+
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -106,7 +109,9 @@ const FirstHeader = () => {
               variant="text"
               sx={{ color: "blue", fontSize: "15px", mt: "3px" }}
             >
-              ثبت نام
+              <Link to="SingIn" style={{textDecoration: 'none'}}>
+              ثبت نام 
+              </Link>
             </Button>
             <LoginRoundedIcon sx={{ fontSize: "17px", marginTop: "13px" }} />
           </Card>
