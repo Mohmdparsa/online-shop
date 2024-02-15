@@ -102,7 +102,10 @@ const FirstHeader = () => {
             }}
           >
             <Button variant="text" sx={{ color: "blue", fontSize: "15px" }}>
+              <Link to="Login" style={{textDecoration: 'none'}}>
               ورود
+              </Link>
+              
             </Button>{" "}
             <span style={{ marginTop: "10px" }}>|</span>
             <Button
