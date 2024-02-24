@@ -1,10 +1,7 @@
 import * as yup from "yup";
 
-const validationSchema = yup.object({
-  name: yup.string("نام خود را وارد کنید").required("نام الزامی است"),
-  lastName: yup
-    .string("نام خانوادگی خود را وارد کنید")
-    .required("نام خانوادگی الزامی است"),
+const ValidationSchema = yup.object({
+  fullname: yup.string("نام خود را وارد کنید").required("نام و نام خانوادگی الزامی است"),
   email: yup
     .string("ایمیل خود را وارد کنید")
     .email("ایمیل معتبر وارد کنید")
@@ -19,4 +16,4 @@ const validationSchema = yup.object({
     .required("رمز عبور الزامی است"),
 });
 
-export default validationSchema;
+export default ValidationSchema;
