@@ -25,14 +25,18 @@ const FormList = () => {
 
   return (
     <>
-      <Grid container style={{ marginTop: "60px", justifyContent: "center" }}>
+      <Grid container style={{ marginTop: "60px", justifyContent: "center" }}
+     
+      
+      >
         <Grid
           item
           style={{
             marginLeft: "30px",
             boxShadow: "0 0 5px 5px gray",
             borderRadius: "20px",
-          }}
+           
+          }} xs={10} sm={8} md={6} lg={6} xl={6}
         >
           <h1 style={{ textAlign: "center" }}>فرم ثبت نام</h1>
           <form
