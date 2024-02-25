@@ -119,9 +119,11 @@ const FirstHeader = () => {
             <LoginRoundedIcon sx={{ fontSize: "17px", marginTop: "13px" }} />
           </Card>
           <span style={{ marginRight: "20px" }}>|</span>
-          <IconButton color="secondary.main" sx={{marginLeft:"20px"}} aria-label="add to shopping cart" size="small">
-            <AddShoppingCartIcon />
+        <Link to="ShoppingCart">
+           <IconButton color="secondary.main" sx={{marginLeft:"20px"}} aria-label="add to shopping cart" size="small">
+            <AddShoppingCartIcon />                
           </IconButton>
+        </Link>
         </Toolbar>
       </AppBar>
     </Box>
