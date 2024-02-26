@@ -2,7 +2,7 @@ import Grid from "@mui/material/Unstable_Grid2";
 import * as React from "react";
 import { Button, CardActionArea, CardActions } from "@mui/material";
 import { Typography, CardContent, CardMedia, Card } from "@mui/material";
-import { selectCards } from "../features/ProductsCardsSlice";
+import { selectCards } from "../../features/ProductsCardsSlice";
 import { useSelector } from "react-redux";
 const ProductsPartition = () => {
   const cards = useSelector(selectCards);
