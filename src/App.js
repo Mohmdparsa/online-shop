@@ -1,7 +1,7 @@
 import { HelmetProvider, Helmet } from "react-helmet-async";
 import { FirstNavbar, SecondNavbar } from "./Component/header/Header";
 import SwipeableImage from "./Component/SwipeableImage";
-import ProductsPartition from "./Component/ProductsPartition";
+import ProductsPartition from "./Component/mainContent/ProductsPartition";
 
 function App() {
   return (
