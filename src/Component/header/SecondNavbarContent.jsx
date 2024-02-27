@@ -21,7 +21,7 @@ const SecondNavbarContent = () => {
   ]
 
   return (
-    <Tabs value={value} onChange={handleChange} centered sx={{ mb: "20px"}}>
+    <Tabs value={value} onChange={handleChange} centered sx={{ mb: "13px"}}>
       {tabs.map((t , index) =>(
          <Tab key={index} label={t.label} sx={{ fontSize: "10px", color:"black"}}/>
 
