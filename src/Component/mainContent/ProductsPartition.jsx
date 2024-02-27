@@ -12,7 +12,7 @@ const ProductsPartition = () => {
       <Grid container sx={{ mb: 2, mt: 2 }} spacing={1}>
         {cards?.map((card) => (
           <Grid item xs={12} sm={6} md={6} lg={4}>
-            <Link to={`/${card.title}`} key={card.id} style={{textDecoration:"none"}}>
+            <Link to={`/${card.identifier}`} key={card.id} style={{textDecoration:"none"}}>
               <Card
                 key={card.id}
                 sx={{
