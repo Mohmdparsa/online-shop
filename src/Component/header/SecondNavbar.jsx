@@ -25,7 +25,7 @@ const SecondNavbar = () => {
             sm: "none",
             md: "block",
           },
-          height: "47px",
+          height: "50px",
           borderRadius:"0 0 10px 10px"
         }}
       >
