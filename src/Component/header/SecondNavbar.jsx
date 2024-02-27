@@ -26,6 +26,7 @@ const SecondNavbar = () => {
             md: "block",
           },
           height: "47px",
+          borderRadius:"0 0 10px 10px"
         }}
       >
         <Toolbar>
