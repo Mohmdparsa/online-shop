@@ -2,12 +2,14 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   cards: [
-    { id: 1, title: "Card1", content: "hello card one" },
-    { id: 2, title: "Card2", content: "hello card two" },
-    { id: 3, title: "Card3", content: "hello card three" },
-    { id: 4, title: "Card4", content: "hello card four" },
-    { id: 5, title: "Card5", content: "hello card five" },
-    { id: 6, title: "Card6", content: "hello card six" },
+    { id: 1, title: "کالای دیجیتال" },
+    { id: 2, title: "خانه و آشپزخانه" },
+    { id: 3, title: "خدمات" },
+    { id: 4, title: "وسایل شخصی" },
+    { id: 5, title: "سرگرمی و فراغت" },
+    { id: 6, title: "اجتماعی" },
+    { id: 7, title: "تجهیزات  و صنعتی" },
+    { id: 8, title: "وسایل نقلیه" },
   ],
 };
 const ProductCardsSlice = createSlice({
