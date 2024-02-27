@@ -1,7 +1,8 @@
 import { HelmetProvider, Helmet } from "react-helmet-async";
 import { FirstNavbar, SecondNavbar } from "./Component/header/Header";
-import SwipeableImage from "./Component/SwipeableImage";
+import SwipeableImage from "./Component/mainContent/SwipeableImage";
 import ProductsPartition from "./Component/mainContent/ProductsPartition";
+import FooterContainer from "./Component/footer/FooterContainer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <SecondNavbar />
         <SwipeableImage />
         <ProductsPartition />
+        <FooterContainer/>
       </div>
     </HelmetProvider>
   );
