@@ -33,14 +33,11 @@ const ProductsPartition = () => {
                     component="img"
                     height="140"
                     sx={{
-                      width: {
-                        xl: "400px",
-                        lg: "300px",
-                        md: "150px",
-                        sm: "150px",
-                      },
+                      width:"100%",
+                      maxWidth:"100%",
+                      height:"35vh"
                     }}
-                    image="/static/images/cards/contemplative-reptile.jpg"
+                    image={card.image}
                     alt="green iguana"
                   />
                   <CardContent>
