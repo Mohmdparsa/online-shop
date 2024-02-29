@@ -82,7 +82,7 @@ const DigitalProducts = () => {
         }}
       >
         <Tab
-          label="Products"
+          label="موبایل"
           {...a11yProps(0)}
           onClick={() => handleCategoryClick("products")}
           sx={{
@@ -94,7 +94,7 @@ const DigitalProducts = () => {
           }}
         />
         <Tab
-          label="Item Two"
+          label="لپ تاپ"
           {...a11yProps(1)}
           onClick={() => handleCategoryClick("cars")}
           sx={{
@@ -106,7 +106,7 @@ const DigitalProducts = () => {
           }}
         />
         <Tab
-          label="Item Three"
+          label="ساعت هوشمند"
           {...a11yProps(2)}
           onClick={() => handleCategoryClick("foods")}
           sx={{
@@ -118,7 +118,7 @@ const DigitalProducts = () => {
           }}
         />
         <Tab
-          label="Item Four"
+          label="کیبورد"
           {...a11yProps(3)}
           sx={{
             backgroundColor: "gray",
@@ -128,8 +128,8 @@ const DigitalProducts = () => {
             my: "5px",
           }}
         />
-        <Tab
-          label="Item Five"
+        {/* <Tab
+          label=""
           {...a11yProps(4)}
           sx={{
             backgroundColor: "gray",
@@ -160,7 +160,7 @@ const DigitalProducts = () => {
             borderRadius: "5px",
             my: "5px",
           }}
-        />
+        /> */}
       </Tabs>
 
       <DigitalProductsCardContent />
