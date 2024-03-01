@@ -1,63 +1,25 @@
 import * as React from "react";
-import { styled } from "@mui/material/styles";
 import {
   AppBar,
   Box,
   Toolbar,
   Typography,
-  InputBase,
   Button,
   Card,
   IconButton,
   Grid,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import SearchIcon from "@mui/icons-material/Search";
 import LoginRoundedIcon from "@mui/icons-material/LoginRounded";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import { Link } from "react-router-dom";
+import SearchInput from "./SearchInput";
 
-const Search = styled("div")(({ theme }) => ({
-  position: "relative",
-  borderRadius: theme.shape.borderRadius,
-  backgroundColor: "lightgrey",
-  "&:hover": {
-    backgroundColor: "grey",
-    color: "white",
-  },
-  marginLeft: 0,
-  width: "100%",
-  [theme.breakpoints.up("sm")]: {
-    marginLeft: theme.spacing(1),
-    width: "auto",
-  },
-}));
 
-const SearchIconWrapper = styled("div")(({ theme }) => ({
-  padding: theme.spacing(0, 2),
-  height: "100%",
-  position: "absolute",
-  pointerEvents: "none",
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-}));
 
-const StyledInputBase = styled(InputBase)(({ theme }) => ({
-  color: "inherit",
-  width: "100%",
-  "& .MuiInputBase-input": {
-    padding: theme.spacing(1, 1, 1, 0),
-    paddingLeft: `calc(1em + ${theme.spacing(4)})`,
-    transition: theme.transitions.create("width"),
-    [theme.breakpoints.up("sm")]: {
-      width: "12ch",
-      "&:focus": {
-        width: "20ch",
-      },
-    },
-  },
-}));
+
+
+
 
 const FirstHeader = () => {
   return (
@@ -81,15 +43,7 @@ const FirstHeader = () => {
           >
             فروشگاه من
           </Typography>
-          <Search>
-            <SearchIconWrapper>
-              <SearchIcon />
-            </SearchIconWrapper>
-            <StyledInputBase
-              placeholder="جستجو..."
-              inputProps={{ "aria-label": "search" }}
-            />
-          </Search>
+         { <SearchInput/>}
           <Grid contaner sx={{display:{xs:"none" , sm:"block"}}}>
             {" "}
             <Grid item sx={{display:"flex"}}>
