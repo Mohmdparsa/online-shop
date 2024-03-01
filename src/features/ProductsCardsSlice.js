@@ -12,7 +12,7 @@ const initialState = {
     { id: 3, title: "سرگرمی و فراغت"  , identifier:"card3" , image: entertainment},
     { id: 4, title: "تجهیزات  و صنعتی"  , identifier:"card4" , image: industrialProduct},
     { id: 5, title: "وسایل نقلیه"  , identifier:"card5" , image: transportProducts},
-    { id: 6, title: "وسایله ورزشی"  , identifier:"card6" , image: sportsProducts}
+    { id: 6, title: "وسایل ورزشی"  , identifier:"card6" , image: sportsProducts}
   ],
 };
 const ProductCardsSlice = createSlice({
