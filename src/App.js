@@ -3,6 +3,7 @@ import { FirstNavbar, SecondNavbar } from "./Component/header/Header";
 import SwipeableImage from "./Component/mainContent/SwipeableImage";
 import ProductsPartition from "./Component/mainContent/ProductsPartition";
 import FooterContainer from "./Component/footer/FooterContainer";
+import BottomAppBar from "./Component/footer/BottomAppBar";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <SecondNavbar />
         <SwipeableImage />
         <ProductsPartition />
+        <BottomAppBar/>
         <FooterContainer/>
       </div>
     </HelmetProvider>
