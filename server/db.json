@@ -1,0 +1,10 @@
+{
+    "Cards":[
+        { "id": 1, "title": "کالای دیجیتال" , "identifier":"card1" },
+        { "id": 2, "title": "خانه و آشپزخانه"  , "identifier":"card2" },
+        { "id": 3, "title": "سرگرمی و فراغت"  , "identifier":"card3" },
+        { "id": 4, "title": "تجهیزات  و صنعتی"  , "identifier":"card4" },
+        { "id": 5, "title": "وسایل نقلیه"  , "identifier":"card5" },
+        { "id": 6, "title": "وسایل ورزشی"  , "identifier":"card6" }
+      ]
+}
