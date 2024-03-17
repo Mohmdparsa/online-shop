@@ -4,7 +4,7 @@ import App from "../App";
 import SignIn from "../Component/header/headerTabs/SignIn";
 import Login from "../Component/header/headerTabs/Login";
 import ShoppingCart from "../Component/header/headerTabs/ShoppingCart";
-import DigitalProducts from "../pages/DigitalProducts";
+import DigitalProducts from "../pages/DigitalProducts/DigitalProducts";
 
 const router = createBrowserRouter([
   {
