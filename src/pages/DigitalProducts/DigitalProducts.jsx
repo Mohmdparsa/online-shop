@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { Box, Typography, Tab, Tabs } from "@mui/material";
 import { useDispatch } from "react-redux";
 import { setSelectedCategory } from "../../features/DigitalProductsSlice";
-import DigitalProductsCardContent from "../DigitalProductsCardContent";
+import DigitalProductsCardContent from "./DigitalProductsCardContent";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
